@@ -116,7 +116,7 @@ In Scala we use monads all the time because they are so natural. ```List``` and 
 ## Ok but what is a monad?
 A monad has to have...  
 1 - flatMap (sometimes called bind)  
-2 - unit 
+2 - unit  
 3 - follow the three monad laws  
 
 In Scala monads, apply usually implements unit as well as handles more cases that don't count as unit.
