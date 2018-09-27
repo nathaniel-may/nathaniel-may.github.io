@@ -1,6 +1,6 @@
 ![alt text](https://pbs.twimg.com/media/Db4szC7W0AAKvHh.jpg:large)
 
-In an attempt to break the cycle where every monad tutorial claims to be better than the others, I implore you not to even bother reading this tutorial at all. Reading oodles of tutorials won't make you understand monads. Tutorials never made us understand how to program in the first place, but breaking everything and building weird stuff did. So instead reading this tutorial... write your own. That feeling of terror knowing your beautiful brainchild will be subject to the gnashing of teeth that is the internet will motivate you to dig up all the details, try it yourself, break everything and answer all the questions your readers will inevitably have. I found inspiration in [Dan Piponi's](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html) idea that I could have invented monads myself and [Brent Yorgey's](https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/) assertion that monads are not, in fact, burritos. 
+In an attempt to break the cycle, this monad tutorial isn't any better than the others, and honestly, you shouldn't bother reading it at all. Reading oodles of tutorials won't make you understand monads. Tutorials never made us understand how to write code in the first place, but breaking everything and building weird stuff did. So instead reading this tutorial... write your own. That feeling of terror knowing your beautiful brainchild will be subject to the gnashing of teeth that is the internet will motivate you try it yourself, to dig up all the details, break everything and answer all the questions your readers will inevitably have. I found inspiration in [Dan Piponi's](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html) idea that I could have invented monads myself and [Brent Yorgey's](https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/) assertion that monads are not, in fact, burritos. 
 
 And now I present to you, my brainchild.
 
@@ -116,7 +116,7 @@ In Scala we use monads all the time because they are so natural. ```List``` and 
 ## Ok but what is a monad?
 A monad has to have...  
 1 - flatMap (sometimes called bind)  
-2 - unit  
+2 - unit 
 3 - follow the three monad laws  
 
 In Scala monads, apply usually implements unit as well as handles more cases that don't count as unit.
@@ -196,5 +196,3 @@ Because it breaks these laws, there are multiple ways to correctly write the sam
 
 ## Conclusion
 If you were faced with a specific problem like stringing together functions that return tuples, you really might have invented Monads yourself. Monads are simply a tool to make otherwise clunky solutions feel more natural. We use Monads all the time already so it's worth understanding why they're so good at what they do.
-
-*Maybe I'll expand this by adding the random generator state problem from the Red Book*
