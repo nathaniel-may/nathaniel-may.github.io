@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Talks"
+    url: https://explore.mongodb.com/vidyard-all-players/nathaniel-may
   - title: "Blog"
     url: https://blog.nathanielmay.com
   #- title: "About"
